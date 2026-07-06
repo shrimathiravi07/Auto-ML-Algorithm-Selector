@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AutoML Algorithm Selector</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR START ================= -->
+
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="#">
+
+            <i class="fa-solid fa-robot"></i>
+
+            AutoML Selector
+
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- Navigation -->
+
+        <div class="collapse navbar-collapse"
+             id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto align-items-center">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#upload">Upload</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+                <li class="nav-item ms-3">
+
+                    <a href="#upload" class="btn upload-btn">
+
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                        Upload Dataset
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ================= HERO PLACEHOLDER ================= -->
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- Left Side -->
+
+            <div class="col-lg-6">
+
+                <span class="badge bg-primary px-3 py-2 mb-3">
+                    AI Powered Platform
+                </span>
+
+                <h1 class="hero-title">
+
+                    Discover the Best
+
+                    <span>Machine Learning</span>
+
+                    Algorithm Automatically
+
+                </h1>
+
+                <p class="hero-text">
+
+                    Upload your dataset and let our intelligent AutoML
+                    system analyze, compare, and recommend the best
+                    machine learning algorithm with detailed performance metrics.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#upload" class="btn btn-primary btn-lg me-3">
+
+                        <i class="fa-solid fa-upload"></i>
+
+                        Upload Dataset
+
+                    </a>
+
+                    <a href="#features" class="btn btn-outline-primary btn-lg">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+                <!-- Statistics -->
+
+                <div class="row mt-5">
+
+                    <div class="col-4">
+
+                        <div class="stat-card">
+
+                            <h3>15+</h3>
+
+                            <p>Algorithms</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-4">
+
+                        <div class="stat-card">
+
+                            <h3>99%</h3>
+
+                            <p>Accuracy</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-4">
+
+                        <div class="stat-card">
+
+                            <h3>CSV</h3>
+
+                            <p>Upload</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="col-lg-6 text-center">
+
+                <div class="hero-image">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================================
+                FEATURES SECTION
+============================================ -->
+
+<section id="features" class="features py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Why Choose Our Platform?
+            </h2>
+
+            <p class="section-subtitle">
+                Everything you need to automatically select the best
+                Machine Learning algorithm for your dataset.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-file-csv"></i>
+
+                    </div>
+
+                    <h4>Upload Dataset</h4>
+
+                    <p>
+
+                        Upload CSV datasets securely with a single click.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                    </div>
+
+                    <h4>AutoML Analysis</h4>
+
+                    <p>
+
+                        Detect problem type and recommend the best model.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                    </div>
+
+                    <h4>Performance</h4>
+
+                    <p>
+
+                        Compare multiple algorithms using evaluation metrics.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-file-pdf"></i>
+
+                    </div>
+
+                    <h4>Download Report</h4>
+
+                    <p>
+
+                        Export a complete PDF report with model comparison.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================================
+                UPLOAD SECTION
+============================================ -->
+
+<section id="upload" class="upload-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+
+                Upload Your Dataset
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                Upload your CSV dataset and let AutoML analyze it automatically.
+
+            </p>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="upload-card">
+
+                    <form
+                        action="/upload"
+                        method="POST"
+                        enctype="multipart/form-data">
+
+                        <label class="upload-box">
+
+                            <input
+                                type="file"
+                                id="dataset"
+                                name="dataset"
+                                accept=".csv"
+                                hidden>
+
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                            <h3>Drag & Drop CSV File</h3>
+
+                            <p>
+
+                                or Click to Browse
+
+                            </p>
+
+                        </label>
+
+                        <div class="text-center mt-4">
+
+                            <button
+                                class="btn upload-main-btn"
+                                type="submit">
+
+                                Upload Dataset
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</body>
+
+</html>
